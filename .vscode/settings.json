@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.json": "jsonc",
+        "iostream": "cpp",
+        "cmath": "cpp",
+        "iomanip": "cpp",
+        "*.tcc": "cpp",
+        "limits": "cpp"
+    }
+}
