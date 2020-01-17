@@ -6,7 +6,9 @@ using namespace std;
 
 int main()
 {
-    setlocale(LC_ALL, "RUSSIAN");
+    setlocale(0, "");
+
+    cout << "Это русский язык, который работает.";
 
     cout << "Author: Mikhail Gunin\n";
 
@@ -37,10 +39,10 @@ int main()
 
     cout << "First polinome result: " << part1_4 << "\n\n";
 
-    // x^3 (x^12 (вЂ“492.234x^2 + 434.432) + 0.2)
+    // x^3 (x^12 (-492.234x^2 + 434.432) + 0.2)
 
-    cout << "x^3 (x^12 (вЂ“492.234x^2 + 434.432) + 0.2) \n";
-    // part2_1 = вЂ“492.234x^2 + 434.432
+    cout << "x^3 (x^12 (-492.234x^2 + 434.432) + 0.2) \n";
+    // part2_1 = -492.234x^2 + 434.432
     double part2_1 = -492.234 * (x * x) + 434.432;
     cout << "Part 1: " << setw(16) << part2_1 << '\n';
 

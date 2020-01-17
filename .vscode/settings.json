@@ -5,6 +5,9 @@
         "cmath": "cpp",
         "iomanip": "cpp",
         "*.tcc": "cpp",
-        "limits": "cpp"
+        "limits": "cpp",
+        "random": "cpp",
+        "fstream": "cpp",
+        "iosfwd": "cpp"
     }
 }
