@@ -6,11 +6,7 @@ using namespace std;
 
 int main()
 {
-    setlocale(0, "");
-
-    cout << "��� ������� ����, ������� ��������." << endl;
-
-    cout << "Author: Mikhail Gunin" << endl;
+    cout << "Author: Mikhail Gunin, 9005" << endl;
 
     // x^2(x(3.03x + 4.00004) - 5.5)
 
@@ -37,7 +33,7 @@ int main()
     double part1_4 = x * x * part1_3;
     cout << "Part 4: " << setw(16) << part1_4 << endl;
 
-    cout << "First polinome result: " << part1_4 << "\n\n";
+    cout << "First polynome result: " << part1_4 << "\n\n";
 
     // x^3 (x^12 (-492.234x^2 + 434.432) + 0.2)
 
@@ -58,11 +54,11 @@ int main()
     double part2_4 = pow(x, 3) * part2_3;
     cout << "Part 4: " << setw(16) << part2_4 << endl;
 
-    cout << "Second polinome result: " << part2_4 << "\n\n";
+    cout << "Second polynome result: " << part2_4 << "\n\n";
 
     double division = part1_4 / part2_4;
 
-    cout << "Final result: " << setprecision(9) << division;
+    cout << "Final result: " << setprecision(5) << division;
 
     return 0;
 }

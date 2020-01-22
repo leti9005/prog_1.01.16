@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-    printf("������.");
     printf("Author: Mikhail Gunin \n");
 
     // x^2(x(3.03x + 4.00004) - 5.5)
@@ -57,7 +56,7 @@ int main()
 
     double division = part1_4 / part2_4;
 
-    printf("Final result: %lf",  division);
+    printf("Final result: %0.8lf",  division);
 
     return 0;
 }
