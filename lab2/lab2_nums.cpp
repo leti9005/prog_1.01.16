@@ -18,7 +18,7 @@ int main()
     printf("a[0] = %lf\n", x);
 
 
-    for (int i = 1; i <= 1000; i++)
+    for (int i = 0; i <= 1000; i++)
     {
         double q = pow(x, 4)
                 /
@@ -26,11 +26,11 @@ int main()
         a *= q;
         s += a;
 
-        printf("a[%d] = %lf; s = %lf\n", i, a, s);
+        printf("a[%d] = %lf; s = %lf\n", i + 1, a, s);
 
         if (a <= eps)
         {
-            cout << "\nN = " << i << endl;
+            cout << "\nN = " << i + 1 << endl;
             break;
         }
     }
