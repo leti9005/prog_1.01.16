@@ -5,6 +5,8 @@ using namespace std;
 
 int main()
 {
+    cout << "Author: Mikhail Gunin, 9005" << endl;
+
     double x;
     cout << "Enter X: " << endl;
     cin >> x;
@@ -15,10 +17,9 @@ int main()
 
     double a = x;
     double s = x;
-    printf("a[0] = %lf\n", x);
+    printf("a[0] = %lf; s = %lf\n", a, s);
 
-
-    for (int i = 0; i <= 1000; i++)
+    for (int i = 0; i < 1000; i++)
     {
         double q = pow(x, 4)
                 /
@@ -28,7 +29,7 @@ int main()
 
         printf("a[%d] = %lf; s = %lf\n", i + 1, a, s);
 
-        if (a <= eps)
+        if (fabs(a) <= eps)
         {
             cout << "\nN = " << i + 1 << endl;
             break;
