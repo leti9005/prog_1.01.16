@@ -32,7 +32,7 @@ int main()
 
     double division = first / second;
 
-    cout << "Final result: " << division;
+    cout << "Final result: " << fixed << division;
 
     return 0;
 }
