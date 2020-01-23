@@ -1,15 +1,12 @@
 #include <iostream>
-#include <vector>
-#include <string>
+#include <iomanip>
 #include <math.h>
 
 using namespace std;
 
 int main()
 {
-    setlocale(LC_ALL, "RUSSIAN");
-
-    cout << "Author: Mikhail Gunin\n";
+    cout << "Author: Mikhail Gunin, 9005\n";
 
     // x^2(x(3.03x + 4.00004) - 5.5)
 
@@ -19,20 +16,16 @@ int main()
     cin >> x;
 
     double first = x * x * ((x * (3.03 * x + 4.00004)) - 5.5);
-    cout << "First: " << first << '\n';
-
-    cout << "First polinome result: " << first << "\n\n";
+    cout << "First polinome result: " << first << '\n';
 
     // x^3 (x^12 (–492.234x^2 + 434.432) + 0.2)
 
-    double second = pow(x, 3) * ((pow(x, 12) * (-492.234 * (x * x) + 434.432)) - 5.5);
-    cout << "Part 4: " << second << '\n';
-
+    double second = pow(x, 3) * ((pow(x, 12) * (-492.234 * (x * x) + 434.432)) + 0.2);
     cout << "Second polinome result: " << second << "\n\n";
 
     double division = first / second;
 
-    cout << "Final result: " << fixed << division;
+    cout << "Final result: " << setprecision(20) << fixed << division;
 
     return 0;
 }
