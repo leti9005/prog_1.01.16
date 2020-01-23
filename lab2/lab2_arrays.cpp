@@ -22,7 +22,8 @@ int main()
 
     printf("a[0] = %lf; s = %lf\n", x, x);
 
-    for (int i = 0; i < MAX_COUNT; i++)
+    int i;
+    for (i = 0; i < MAX_COUNT; i++)
     {
         double q = pow(x, 4)
                 /
@@ -31,20 +32,19 @@ int main()
         sequence[i + 1] = sequence[i] * q;
         sums[i + 1] += sums[i] + sequence[i + 1];
 
-        if (fabs(sequence[i + 1]) <= eps)
+        if (fabs(sequence[i + 1]) < eps)
         {
             cout << "\nN = " << i + 1 << endl;
             break;
         }
     }
 
-    for (int i = 0; i < MAX_COUNT; i++)
+    for (int n = 0; n < i; n++)
     {
-        auto a = sequence[i];
-        auto s = sums[i];
-        if (a == 0) break;
+        auto a = sequence[n];
+        auto s = sums[n];
 
-        printf("a[%d] = %lf; s = %lf\n", i, a, s);
+        printf("a[%d] = %lf; s = %lf\n", n, a, s);
     }
 
 

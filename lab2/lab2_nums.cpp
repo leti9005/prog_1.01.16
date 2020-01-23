@@ -29,7 +29,7 @@ int main()
 
         printf("a[%d] = %lf; s = %lf\n", i + 1, a, s);
 
-        if (fabs(a) <= eps)
+        if (fabs(a) < eps)
         {
             cout << "\nN = " << i + 1 << endl;
             break;
