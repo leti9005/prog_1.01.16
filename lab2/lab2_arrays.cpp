@@ -29,7 +29,7 @@ int main()
                    ((4 * i + 2) * (4 * i + 3) * (4 * i + 4) * (4 * i + 5));
 
         sequence[i + 1] = sequence[i] * q;
-        sums[i + 1] += sequence[i + 1];
+        sums[i + 1] += sums[i] + sequence[i + 1];
 
         if (fabs(sequence[i + 1]) <= eps)
         {

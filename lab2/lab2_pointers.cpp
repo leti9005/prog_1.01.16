@@ -35,7 +35,7 @@ int main()
         auto a = *(sequence + i) * q;
 
         *(sequence + i + 1) = a;
-        *(sums + i + 1) += a;
+        *(sums + i + 1) += *(sums + i) + a;
 
         if (fabs(a) <= eps)
         {
