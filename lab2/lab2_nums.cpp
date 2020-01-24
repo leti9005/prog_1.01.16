@@ -27,13 +27,13 @@ int main()
         a *= q;
         s += a;
 
-        printf("a[%d] = %lf; s = %lf\n", i + 1, a, s);
-
         if (fabs(a) < eps)
         {
-            cout << "\nN = " << i + 1 << endl;
+            cout << "\nN = " << i - 1 << endl;
             break;
         }
+
+        printf("a[%d] = %lf; s = %lf\n", i + 1, a, s);
     }
 
     return 0;

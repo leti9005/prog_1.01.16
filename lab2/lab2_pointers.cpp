@@ -50,19 +50,14 @@ int main()
 
         *(sequence + i + 1) = a;
         *(sums + i + 1) += *(sums + i) + a;
-
-        if (fabs(a) < eps)
-        {
-            cout << "\nN = " << i << endl;
-            break;
-        }
     }
+
+    cout << "\nN = " << i - 1 << endl;
 
     for (int n = 0; n <= i; n++)
     {
         auto a = *(sequence + n);
         auto s = *(sums + n);
-        if (a == 0) break;
 
         printf("a[%d] = %lf; s = %lf\n", n, a, s);
     }

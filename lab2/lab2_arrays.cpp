@@ -20,8 +20,6 @@ int main()
     double sequence[MAX_COUNT] = { x };
     double sums[MAX_COUNT]     = { x };
 
-    printf("a[0] = %lf; s = %lf\n", x, x);
-
     int i;
     for (i = 0; i < MAX_COUNT; i++)
     {
@@ -34,7 +32,7 @@ int main()
 
         if (fabs(sequence[i + 1]) < eps)
         {
-            cout << "\nN = " << i + 1 << endl;
+            cout << "\nN = " << i - 1 << endl;
             break;
         }
     }
